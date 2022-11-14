@@ -13,7 +13,8 @@ jobs:
       with:
         python-version: 3.7
     - name: install request json random time
-      run: pip install request
+      run: pip install --upgrade pip
+           pip install request
            pip install json
            pip install time
            pip install random
