@@ -14,10 +14,10 @@ jobs:
         python-version: 3.7
     - name: install request json random time
       run: pip install --upgrade pip
-           pip install request
-           pip install json
-           pip install time
-           pip install random
+           pip3 install request
+           pip3 install json
+           pip3 install time
+           pip3 install random
     - name: run
       run: python discord_test.py
       env:
