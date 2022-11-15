@@ -20,7 +20,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install --upgrade requests
-        python -m pip install --upgrade json
         python -m pip install --upgrade random
         python -m pip install --upgrade time
         # 安装需要的python库
