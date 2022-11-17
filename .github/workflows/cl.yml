@@ -22,8 +22,8 @@ jobs:
         python -m pip install --upgrade requests
         # 安装需要的python库
     - name: run1
-      run: |
-        python discord_test.py
       env:
           AUTHORIZATION_LIST1: ${{ secrets.AUTHORIZATION_LIST1 }}
           CHANEL_LIST1: ${{ secrets.CHANEL_LIST1 }}
+      run: |
+        python discord_test.py
