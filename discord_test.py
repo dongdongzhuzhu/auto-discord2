@@ -2,6 +2,7 @@ import requests
 import json
 import random
 import time
+import os
 # author : 二娃玩转区块链
 # 视频教程在：YouTube ：https://www.youtube.com/watch?v=XQfhTPm_FJo （感谢支持，多多点赞）
 # ➡️ 进discord 更多优质内容 ： https://discord.com/invite/RHtf7V6Z5G  （快讯推送，每日优质资料爬取，分类聊天。一站式服务）
@@ -71,8 +72,8 @@ def chat(chanel_list,authorization):
 
 
 if __name__ == "__main__":
-    chanel_list = chanel_list1  # 这里是群聊号（url最右边）
-    authorization_list = authorization_list1 # 这里auth认证信息
+    chanel_list = os.environ['chanel_list1']  # 这里是群聊号（url最右边）
+    authorization_list = os.environ['authorization_list1'] # 这里auth认证信息
     while True:
         try:
             chat(chanel_list,authorization_list)
