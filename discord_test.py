@@ -63,9 +63,10 @@ def chat(chanel_list,authorization):
           try:
               res = requests.post(url=url, headers=header, data=json.dumps(msg))
               print(res.content)
-              #print(get_context(authorization,chanel_id))
+              print(get_context(authorization,chanel_id))
           except Exception as ex:
               print("2出现如下异常%s" % ex)
+              
               pass
           continue
       time.sleep(random.randrange(10, 30))
