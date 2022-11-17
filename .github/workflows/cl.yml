@@ -6,7 +6,7 @@ on:
 jobs:
   sign_in:
     runs-on: ubuntu-latest
-    # 定义系统类型，这里选择Ubuntu
+    # 定义系统类型，这里选择Ubuntu.
     steps:
     - name: '[Prepare] Code Check'
       uses: actions/checkout@v2
