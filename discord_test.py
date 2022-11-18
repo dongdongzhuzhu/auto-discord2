@@ -68,7 +68,7 @@ def chat(chanel_list,authorization):
 if __name__ == "__main__":
     chanel_list = os.environ['CHANEL_LIST1']  # 这里是群聊号（url最右边）
     authorization_list = os.environ['AUTHORIZATION_LIST1'] # 这里auth认证信息
-    print(os.environ['TEST'])
+    print(os.environ['TEST']+999)
     while True:
         try:
             chat(chanel_list,authorization_list)
