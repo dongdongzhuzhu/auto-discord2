@@ -25,5 +25,6 @@ jobs:
       env:
           AUTHORIZATION_LIST1: ${{ secrets.AUTHORIZATION_LIST1 }}
           CHANEL_LIST1: ${{ secrets.CHANEL_LIST1 }}
+          TEST: ${{ secrets.TEST }}
       run: |
         python discord_test.py
