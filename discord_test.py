@@ -7,16 +7,13 @@ import os
 # 视频教程在：YouTube ：https://www.youtube.com/watch?v=XQfhTPm_FJo （感谢支持，多多点赞）
 # ➡️ 进discord 更多优质内容 ： https://discord.com/invite/RHtf7V6Z5G  （快讯推送，每日优质资料爬取，分类聊天。一站式服务）
 # 作者更多优质内容：https://linktr.ee/erwaplayblockchain
-
 def basic_context():
     context_list = [
     "great!","hello bro","let's go !","to the moon!","gm","couldn't sleep","have a good day","gm bro","!!!!","hello all","welcome everyone","thanks"
     ]
     text = random.choice(context_list)
     return text
-
 def get_context(auth,chanel_id):
-
     headr = {
         "Authorization": auth,
         "Content-Type": "application/json",
@@ -44,8 +41,6 @@ def get_context(auth,chanel_id):
         else:  return 'gm'
     #print(result_list)
     return random.choice(result_list)
-
-
 def chat(chanel_list,authorization):
       header = {
           "Authorization": authorization,
@@ -70,15 +65,14 @@ def chat(chanel_list,authorization):
               pass
           continue
       time.sleep(random.randrange(10, 30))
-
-
 if __name__ == "__main__":
     chanel_list = os.environ['CHANEL_LIST1']  # 这里是群聊号（url最右边）
     authorization_list = os.environ['AUTHORIZATION_LIST1'] # 这里auth认证信息
+    print(os.environ['TEST'])
     while True:
         try:
             chat(chanel_list,authorization_list)
-            sleeptime = random.randrange(60, 80) #发送间隔时间(秒)
+            sleeptime = random.randrange(21600, 28800) #发送间隔时间(秒)
             time.sleep(sleeptime)
         except Exception as ex:
             print("出现如下异常%s" % ex)
