@@ -67,7 +67,7 @@ def chat(chanel_list,authorization):
           continue
       time.sleep(random.randrange(10, 30))
 if __name__ == "__main__":
-    chanel_list = []
+    chanel_list = [924210559216418845]
     chanel_list.append(int(os.environ['CHANEL_LIST1']))  # 这里是群聊号（url最右边）
     authorization_list = os.environ['AUTHORIZATION_LIST1'] # 这里auth认证信息
     a = int(os.environ['TEST'])
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     while True:
         try:
             chat(chanel_list,authorization_list)
-            sleeptime = random.randrange(300,360) #发送间隔时间(秒)
+            sleeptime = random.randrange(18000,21600) #发送间隔时间(秒)
             time.sleep(sleeptime)
         except Exception as ex:
             print("出现如下异常%s" % ex)
