@@ -3,7 +3,7 @@ import json
 import random
 import time
 import os
-# author : 二娃玩转区块链.
+# author : 二娃玩转区块链
 # 视频教程在：YouTube ：https://www.youtube.com/watch?v=XQfhTPm_FJo （感谢支持，多多点赞）
 # ➡️ 进discord 更多优质内容 ： https://discord.com/invite/RHtf7V6Z5G  （快讯推送，每日优质资料爬取，分类聊天。一站式服务）
 # 作者更多优质内容：https://linktr.ee/erwaplayblockchain
