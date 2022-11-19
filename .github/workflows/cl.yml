@@ -1,8 +1,7 @@
 name: schedule
 
 on:
-  schedule:
-    - cron: "* * * * *"
+  [push]
 jobs:
   sign_in:
     runs-on: ubuntu-latest
