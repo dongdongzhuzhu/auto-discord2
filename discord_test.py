@@ -69,7 +69,7 @@ def chat(chanel_list,authorization):
 if __name__ == "__main__":
     chanel_list = [740814068935557164,924210559216418845,1011284281835913266]# 这里是群聊号（url最右边）     
     authorization_list = os.environ['AUTHORIZATION_LIST1'] # 这里auth认证信息
-    while True:
+    #while True:
         try:
             chat(chanel_list,authorization_list)
             #sleeptime = random.randrange(18000,21600) #发送间隔时间(秒)
