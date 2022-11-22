@@ -78,4 +78,4 @@ if __name__ == "__main__":
     except Exception as ex:
         
         print("出现如下异常%s" % ex)
-        break
+
