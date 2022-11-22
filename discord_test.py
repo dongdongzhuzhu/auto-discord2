@@ -72,8 +72,8 @@ if __name__ == "__main__":
     while True:
         try:
             chat(chanel_list,authorization_list)
-            sleeptime = random.randrange(18000,21600) #发送间隔时间(秒)
-            time.sleep(sleeptime)
+            #sleeptime = random.randrange(18000,21600) #发送间隔时间(秒)
+            #time.sleep(sleeptime)
         except Exception as ex:
             print("出现如下异常%s" % ex)
             break
