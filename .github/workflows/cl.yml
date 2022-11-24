@@ -2,7 +2,7 @@ name: push
 
 on:
     schedule:
-    - cron: '* * * * *'
+    - cron: '12 8,16,20 * * *'
 jobs:
   sign_in:
     runs-on: ubuntu-latest
